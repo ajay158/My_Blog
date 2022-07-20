@@ -365,7 +365,7 @@
 
 /* CSS FOR ABOUT ME HTML FILE */
 
- .aboutme-container {
+.aboutme-container {
     display: grid;
     grid-template-columns: 2fr 2fr;
     margin: 2rem 6rem;
@@ -373,7 +373,7 @@
 
 }
 
-.aboutme-text1{
+.aboutme-text1 {
     display: none;
 }
 
@@ -398,7 +398,7 @@ h2 {
 
 .aboutme-text a:hover {
     text-decoration: underline;
-} 
+}
 
 @media(max-width:600px) {
     .aboutme-container {
@@ -410,7 +410,8 @@ h2 {
         font-size: 18px;
     }
 
-    .aboutme-text h1, h2 {
+    .aboutme-text h1,
+    h2 {
         font-size: 25px;
     }
 
@@ -440,3 +441,77 @@ h2 {
 
 /* CSS FOR CONTACT ME HTML FILE */
 
+.contactme {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    margin: 2rem 6rem;
+    gap: 2rem;
+}
+
+.contact-right {
+    border: 1px solid black;
+    padding: 1rem 1rem;
+}
+
+.contact-right h1{
+    /* color: #F15412; */
+    font-weight: 600;
+ margin-bottom: 1rem;
+}
+.contact-left {
+    border: 1px solid black;
+    padding: 1rem 1rem;
+}
+
+input{
+    width: 70%;
+    margin: 0.5rem;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    outline: none;
+}
+
+textarea{
+    width: 70%;
+    /* border: none; */
+    border-bottom: 1px solid #ccc;
+    outline: none;
+    box-sizing: border-box;
+}
+
+label{
+    display: block;
+    color: #F15412;
+}
+
+button{
+    background: #F15412;
+    width: 8rem;
+    border: none;
+    outline: none;
+    color: #fff;
+    height: 50px;
+    border-radius: 15px;
+    margin-top: 1rem;
+    box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
+    display: block;
+    cursor: pointer;
+}
+
+tr td:first-child{
+    padding-right: 1rem;
+}
+
+tr td{
+    padding-top: 1rem;
+}
+
+@media(max-width:600px) {
+ grid-template-columns: 1fr;
+}
+
+@media(max-width:1024px) {
+
+    
+
+}
