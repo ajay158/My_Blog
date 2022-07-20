@@ -60,12 +60,8 @@
     .menu {
         flex-direction: column;
         align-items: center;
-        
+
     }
-    
-    /* .menu a{
-        gap: 0.8rem;
-    } */
 }
 
 /* CSS FOR MAIN CONTAINER */
@@ -124,51 +120,323 @@
 
 }
 
-/* .secondary .div {
-    margin-top: 1rem;
-} */
-
 @media(max-width:600px) {
     .main-container {
         grid-template-columns: 1fr;
         margin: 1rem 2rem;
     }
-    
+
     .main-image p {
-       font-size: 18px;
+        font-size: 18px;
     }
-    
+
     .main-text h1 {
         font-size: 25px;
     }
-    
+
     .main-text p {
         font-size: 18px;
     }
-    
+
     .main-text a {
-       font-size: 15px;
+        font-size: 15px;
     }
-      
+
     .secondary {
         border: 15px solid #A5C9CA;
         height: 60%;
         padding: 1rem 1rem;
     }
-    
-    /* .secondary h3 {
-        padding-bottom: 0.7rem;
-    
-    } */
+}
+
+@media(max-width:1024px) {
+
+    .main-container {
+        grid-template-columns: 1fr;
+        margin: 1rem 1rem;
+    }
+
     .secondary {
         display: none;
     }
-}
-
-@media(min-width: 768px){
 
 }
 
-@media(min-width:1200px){
+/* CSS FOR SECOND CONTAINER */
+
+.second-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin: 2rem 6rem;
+    gap: 5rem;
+}
+
+.div1 img {
+    max-width: 100%;
+}
+
+.div1 p {
+    float: right;
+}
+
+.second-container-text {
+    margin-top: 2rem;
+}
+
+.second-container-text h1 {
+    margin-bottom: 1rem;
+}
+
+.second-container-text p {
+    margin-bottom: 1rem;
+}
+
+.second-container-text a {
+    text-decoration: none;
+    color: #F15412;
+    letter-spacing: 0.2rem;
 
 }
+
+.second-container-text a:hover {
+    text-decoration: underline;
+}
+
+.div2 img {
+    width: 100%;
+}
+
+.div2 {
+    border: 15px solid #A5C9CA;
+    height: 100%;
+    padding: 1rem 1rem;
+}
+
+.div2 h1 {
+    padding-bottom: 1rem;
+}
+
+* .div2 h1 {
+    padding-bottom: 1rem;
+
+}
+
+.div2 .div6 {
+    margin-top: 2rem;
+}
+
+.div2 .div7 {
+    margin-top: 2rem;
+}
+
+
+@media(max-width:600px) {
+    .second-container {
+        grid-template-columns: 1fr;
+        margin: 1rem 2rem;
+    }
+
+    .div1 p {
+        font-size: 18px;
+    }
+
+    .second-container-text h1 {
+        font-size: 25px;
+    }
+
+    .second-container-text p {
+        font-size: 18px;
+    }
+
+    .second-container-text a {
+        font-size: 15px;
+    }
+
+    .div2 {
+        border: 15px solid #A5C9CA;
+        height: 100%;
+        padding: 1rem 1rem;
+    }
+}
+
+@media(max-width:1024px) {
+
+    .second-container {
+        grid-template-columns: 1fr;
+        margin: 1rem 1rem;
+    }
+
+    .div2 {
+        display: none;
+    }
+
+}
+
+
+/* CSS FOR THIRD CONTAINER */
+
+
+.third-container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    margin: 2rem 6rem;
+    gap: 5rem;
+}
+
+.div3 img {
+    max-width: 100%;
+}
+
+.div3 p {
+    float: right;
+}
+
+.third-container-text {
+    margin-top: 2rem;
+}
+
+.third-container-text h1 {
+    margin-bottom: 1rem;
+}
+
+.third-container-text p {
+    margin-bottom: 1rem;
+}
+
+.third-container-text a {
+    text-decoration: none;
+    color: #F15412;
+    letter-spacing: 0.2rem;
+}
+
+.third-container-text a:hover {
+    text-decoration: underline;
+}
+
+@media(max-width:600px) {
+    .third-container {
+        grid-template-columns: 1fr;
+        margin: 1rem 2rem;
+    }
+
+    .div3 p {
+        font-size: 18px;
+    }
+
+    .third-container-text h1 {
+        font-size: 25px;
+    }
+
+    .third-container-text p {
+        font-size: 18px;
+    }
+
+    .third-container-text a {
+        font-size: 15px;
+    }
+}
+
+@media(max-width:1024px) {
+
+    .third-container {
+        grid-template-columns: 1fr;
+        margin: 1rem 1rem;
+    }
+
+}
+
+/* CSS FOR FOOTER */
+
+.footer {
+    height: 10rem;
+    background: #354259;
+    text-align: center;
+    padding: 4rem 0;
+
+
+}
+
+.footer p {
+    color: #fff;
+    padding: 0.3rem 0;
+    font-weight: 400;
+}
+
+
+/* CSS FOR ABOUT ME HTML FILE */
+
+ .aboutme-container {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    margin: 2rem 6rem;
+    gap: 5rem;
+
+}
+
+.aboutme-text1{
+    display: none;
+}
+
+.aboutme-img img {
+    max-width: 100%;
+}
+
+.aboutme-text h1,
+h2 {
+    margin-bottom: 1rem;
+}
+
+.aboutme-text p {
+    margin-bottom: 1rem;
+}
+
+.aboutme-text a {
+    color: #F15412;
+    letter-spacing: 0.2rem;
+    text-decoration: none;
+}
+
+.aboutme-text a:hover {
+    text-decoration: underline;
+} 
+
+@media(max-width:600px) {
+    .aboutme-container {
+        grid-template-columns: 1fr;
+        margin: 1rem 2rem;
+    }
+
+    .div3 p {
+        font-size: 18px;
+    }
+
+    .aboutme-text h1, h2 {
+        font-size: 25px;
+    }
+
+    .aboutme-text p {
+        font-size: 18px;
+    }
+
+    .aboutme-text a {
+        font-size: 15px;
+    }
+}
+
+@media(max-width:1024px) {
+
+    .aboutme-container {
+        grid-template-columns: 1fr;
+        margin: 1rem 2rem;
+    }
+
+
+}
+
+/* CSS FOR RECENT BLOG HTML FILE */
+
+/* No, need CSS for Recent-Blog HTML File. */
+
+
+/* CSS FOR CONTACT ME HTML FILE */
+
