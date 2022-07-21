@@ -373,17 +373,9 @@
 
 }
 
-.aboutme-text1 {
-    display: none;
-}
-
 .aboutme-img img {
     max-width: 100%;
-}
-
-.aboutme-text h1,
-h2 {
-    margin-bottom: 1rem;
+    margin-bottom: 3rem;
 }
 
 .aboutme-text p {
@@ -401,6 +393,15 @@ h2 {
 }
 
 @media(max-width:600px) {
+
+    .aboutme-container {
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        margin: 2rem 6rem;
+        gap: 5rem;
+    
+    }
+    
     .aboutme-container {
         grid-template-columns: 1fr;
         margin: 1rem 2rem;
