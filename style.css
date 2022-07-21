@@ -453,65 +453,96 @@ h2 {
     padding: 1rem 1rem;
 }
 
-.contact-right h1{
+.contact-right h1 {
     /* color: #F15412; */
     font-weight: 600;
- margin-bottom: 1rem;
+    margin-bottom: 1rem;
 }
+
 .contact-left {
     border: 1px solid black;
     padding: 1rem 1rem;
 }
 
-input{
-    width: 70%;
+input {
+    width: 100%;
     margin: 0.5rem;
     border: none;
     border-bottom: 1px solid #ccc;
     outline: none;
 }
 
-textarea{
-    width: 70%;
+textarea {
+    width: 100%;
     /* border: none; */
     border-bottom: 1px solid #ccc;
     outline: none;
     box-sizing: border-box;
 }
 
-label{
+label {
     display: block;
     color: #F15412;
 }
 
-button{
+button {
     background: #F15412;
-    width: 8rem;
+    width: 6rem;
     border: none;
     outline: none;
     color: #fff;
     height: 50px;
     border-radius: 15px;
     margin-top: 1rem;
-    box-shadow: 0px 5px 15px 0px rgba(28, 0, 181, 0.3);
+    box-shadow: 0px 5px 15px 0px rgba(254, 158, 39, 0.3);
     display: block;
     cursor: pointer;
 }
 
-tr td:first-child{
+tr td:first-child {
     padding-right: 1rem;
 }
 
-tr td{
+tr td {
     padding-top: 1rem;
 }
 
 @media(max-width:600px) {
- grid-template-columns: 1fr;
+    .contactme {
+        grid-template-columns: 1fr;
+        margin: 1rem 1rem;
+    }
+
+    .contact-right h1 {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+
+    label{
+        font-size: 0.8rem;
+    }
+
+    button {
+        font-size: 0.8rem;
+        width: 4rem;
+    }
+    
+    .contact-left h1 {
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+
+    table{
+       font-size: 00.8rem;
+    }
+
 }
 
-@media(max-width:1024px) {
-
-    
-
+@media(max-width:1280px) {
+    .contactme {
+        grid-template-columns: 1fr;
+        margin: 1rem 1rem;
+    }
 }
